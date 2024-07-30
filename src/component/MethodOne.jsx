@@ -12,7 +12,7 @@ function MethodOne() {
         SetIsSubmit(true)
         const baseUrl = 'https://api.paystack.co/transaction/initialize'
         const secret_key= 'sk_test_03f0d6cb246f3f1beee1fb28778ae7956c5dd31f'
-    
+
         const response = await fetch(baseUrl,{
           method:'POST',
           headers:{
@@ -28,10 +28,8 @@ function MethodOne() {
           popup.resumeTransaction(data.data.access_code);
           console.log(data)
           alert("submitted")
-    
-    
+          
         }
-    
       }
   return (
     <div className="App">
